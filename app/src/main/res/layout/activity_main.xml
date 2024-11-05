@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:textColor="?attr/colorPrimary" />
+
+    <!-- Word Display -->
+    <TextView
+        android:id="@+id/word_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_____"
+        android:textSize="36sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:textColor="?attr/colorAccent" />
+
+    <!-- User Input for Guessing -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guess a letter or word"
+        app:boxStrokeColor="?attr/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Submit Guess Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Guess"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="#2E7D32"
+        />
+
+    <!-- Request Hint Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/request_hint_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Letter Occurrence"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="#0277BD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/request_length_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask for Word Length"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="#0277BD" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/request_tip_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request a Tip"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="#0277BD"/>
+
+    <!-- Game Status Display -->
+    <TextView
+        android:id="@+id/game_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attempts Left: 10"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <!-- Final Score Display -->
+    <TextView
+        android:id="@+id/final_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Score: 100"
+        android:textSize="22sp"
+        android:gravity="center" />
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timer_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Taken: 0s"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/Leaderboard_Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Global Leaderboard Status"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#4DD0E1" />
+
+    <TextView
+        android:id="@+id/leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard "
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/developer_mode_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developer Mode"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textColor="#FF0000" />
+
+    <!-- API Status Text View -->
+    <TextView
+        android:id="@+id/api_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="API Status"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textColor="#FF0000" /> <!-- Customize color as needed -->
+
+    <TextView
+        android:id="@+id/dev_word_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secret Word: [DEV]"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textColor="#C62828"
+        android:visibility="visible" />
+
+</LinearLayout>
